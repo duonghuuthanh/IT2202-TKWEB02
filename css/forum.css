@@ -1,0 +1,117 @@
+nav {
+    background-color: cadetblue;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+header {
+    background: linear-gradient(blue, white, blue);
+}
+
+.subject {
+    color: darkblue;
+    text-shadow: 3px 4px 3px gold;
+    font-size: 3rem;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: brown;
+    right: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.submenu::after {
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent brown transparent;
+    position: absolute;
+    bottom: 100%;
+    right: 30%;
+}
+
+.sub:hover .submenu {
+    display: block;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.forum {
+    background-color: aquamarine;
+    padding: 0.5rem;
+    border-bottom: 1px solid darkblue;
+}
+
+.forum:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.form-subject {
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ads > div {
+    background: linear-gradient(blue, darkblue);
+    color: white;
+    width: 9%;
+    position: fixed;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 5rem 0;
+    border-radius: 10px;
+}
+
+.ads .left {
+    left: 0.5%;
+}
+
+.ads .right {
+    right: 0.5%;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}

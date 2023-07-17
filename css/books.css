@@ -1,0 +1,132 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/VNI-Viet\ tay.ttf);
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(blue, white);
+    color: white;
+}
+
+header h1 {
+    font-family: myfont;
+}
+
+.flex {
+    display: flex;
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ads > div {
+    border: 1.5px dashed gold;
+    padding: 3rem 0.2rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.icon {
+    width: 1rem;
+}
+
+.logo {
+    width: 7rem;
+}
+
+/* MENU */
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1rem;
+    border-right: 1px solid darkblue;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background: darkblue;
+    color: white;
+}
+
+/* MAIN */
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 80%;
+}
+
+.v-menu {
+    flex-direction: column;
+}
+
+.v-menu > li > a {
+    background: linear-gradient(lightblue, white);
+    border-right: none !important;
+}
+
+/* RIGHT */
+.books {
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 20%;
+    padding: 1rem;
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.book img {
+    width: 100%;
+}
+
+.des {
+    position: absolute;
+    background-color: rgb(0, 0, 255, 0.6);
+    color: whitesmoke;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    transition: bottom 1s;
+    overflow: hidden;
+}
+
+.book:hover .des {
+    bottom: 0;
+}
+ul.social {
+    list-style-type: none;
+    position: fixed;
+    right: 0;
+    top: 100px;
+   
+    z-index: 99;
+    padding: 0;
+   
+}
+
+ul.social > li {
+    margin-right: -150px;
+    min-width: 200px;
+    transition:margin-right 1s;
+}
+
+ul.social > li:hover {
+    margin-right: 0;
+}
